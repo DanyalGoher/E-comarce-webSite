@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="perchase.css">
+</head>
+<body>
+    <div class="main">
+
+    <img src="images/base img/24.webp" style="width: 200px;">
+    <p><a href="#" style="color: rgb(18, 149, 201);">Cart</a>&emsp; > &emsp; Information &emsp; > &emsp; <a style="color: rgb(18, 149, 201);">Shipping</a> &emsp; > &emsp; <a style="color: rgb(18, 149, 201);">Payment</a></p>
+<br>
+<form autocomplete="off" action=".php/info.php" method="post">
+<div class="contect">
+
+    <p>Contect Information</p>
+
+    <input id="mail" type="text" name="email" placeholder="Email or mobile phone number" required>
+    <br><br>
+    <input type="checkbox">email me with news and offers
+
+</div>
+<br>
+
+<div class="address">
+
+    <p style="font-size: 20px;">Shipping Address</p>
+    <select name="" id="select">
+        <option value="Pakistan">Pakistan</option>
+    </select><br><br>
+    <input type="text" name="Fname" placeholder="first name" pattern=".{1,}[A-Za-z]" title="only Alphabets are allowed!" required> <input type="text" name="Lname" placeholder="last name" pattern=".{1,}[A-Za-z]" title="only Alphabets are allowed!" required>
+    <br><br>
+    <input id="address" name="Address" type="text" placeholder="Address:  House No / city / state" required>
+    <br><br>
+    <input type="text" placeholder="City" name="City" pattern=".{1,}[A-Za-z]" title="only Alphabets are allowed!" required> <input type="text" placeholder="Postal-Code: 0-0-0-0" name="PostalCode" pattern="[0-9][-].{1,}" title="only numbers are allowed!" maxlength="7" required>
+    <br><br>
+    <input id="address" type="text" name="PhoneNumber" placeholder="Phone# 00-000-000000" pattern=".{1,}[0-9]" title="only numbers are allowed!" maxlength="11" required>
+    <br><br>
+    
+</div>
+<input type="checkbox">save this information for next time
+<br><br>
+<a href="#" style="text-decoration: none; color: rgb(0, 124, 226);"> Return to cart</a>
+
+<input id="input" type="submit" value="Continue to Shipping">
+</form>
+</div> 
+</body>
+</html>
